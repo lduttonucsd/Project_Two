@@ -19,6 +19,9 @@ module.exports = app => {
     });
   });
 
+  //load games page
+
+  app.get("/games", (req, res) => res.render("games"));
   
 
   // Load example page and pass in an example by id
