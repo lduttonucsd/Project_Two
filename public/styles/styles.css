@@ -2,8 +2,13 @@
   line-height: 2.5;
 }
 
+.btn-primary {
+  background-color: #a59e41;
+}
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #6441a5;
 }
 
 #profile-body {
@@ -22,6 +27,7 @@ body {
   overflow-x: hidden;
   padding-top: 20px;
   margin-top: 56px;
+  background-color: #ffffff;
 }
 
 .sidenav a {
@@ -33,6 +39,7 @@ body {
 }
 
 .sidenav a:hover {
+  background-color: #a56c41;
   color: #f1f1f1;
 }
 
