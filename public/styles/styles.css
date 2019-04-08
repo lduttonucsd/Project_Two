@@ -6,6 +6,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.card {
+  width: 100%;
+}
+
 #profile-body {
   float: right;
   padding: 3%;
@@ -31,6 +35,7 @@ body {
   color: #818181;
   display: block;
 }
+
 
 .sidenav a:hover {
   color: #f1f1f1;

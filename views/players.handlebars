@@ -1,0 +1,26 @@
+<div class="card text-center">
+    <div class="card-body">
+        <h5 class="card-title">Welcome to the Players Page!</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Select a Player to stream from below:</h6>
+        <form id="player-search">
+            <div class="form-group">
+                <label for="playerInput">Player name:</label>
+                <input type="playerInput" class="form-control" id="playerInput" placeholder="Name of player...">
+            </div>
+            <button type="submit" id="send" class="btn btn-primary">Submit</button>
+        </form>
+        {{!-- <a href="/playerOne" class="card-link">Player One</a> --}}
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+    $("#player-search").on("submit", function (event) {
+        event.preventDefault();
+        var playerSearch = $("#playerInput").val().trim();
+        console.log(playerSearch);
+        window.location.replace(`/playerOne/${playerSearch}`);
+
+    });
+
+</script>
