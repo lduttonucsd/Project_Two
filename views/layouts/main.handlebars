@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="/styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <title>Home Page</title>
 </head>
 
 <body>
   <nav id="nav1" class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="/">Project Two Starter</a>
+      <a class="navbar-brand" href="/"><i class="fas fa-tv"></i>BeTwitched</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,6 +49,32 @@
   <div class="sidenav">
     <a href="/games">Games</a>
     <a href="/streams">Streams</a>
+
+
+    <a href="#">Games     <button type="button" class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <li><i class="fab fa-battle-net"></i>Overwatch</li>
+        <li><i class="fab fa-steam"></i>CS:GO</li>
+        <li><i class="fab fa-twitch"></i>More...</li>
+      </div>
+    </a>
+
+
+    <a href="/players">Players     <button type="button" class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <li><i class="fab fa-battle-net"></i>Overwatch</li>
+        <li><i class="fab fa-steam"></i>CS:GO</li>
+        <li><i class="fab fa-twitch"></i>More...</li>
+      </div>
+    </a>
+
+
     {{#if user}}
     <a href="#">Favorites</a>
     {{/if}}
@@ -54,10 +83,6 @@
 
   <div class="container" id="profile-body">
     {{{body}}}
-
-    <iframe id="streamEmbed" src="https://player.twitch.tv/?channel=overwatchleague&muted=true" height="<height>"
-      width="<width>" frameborder="<frameborder>" scrolling="<scrolling>" allowfullscreen="<allowfullscreen>">
-    </iframe>
 
   </div>
 
