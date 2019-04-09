@@ -1,10 +1,13 @@
-const queryURL = "https://api.twitch.tv/helix/streams?game_name=overwatch?oauth_token=mrvyen1wy05u8ew60gswk3pw1zj8ao";
+require("dotenv").config();
+const axios = require("axios");
 
-$.ajax({
-    url: queryURL,
-    method: "GET"
-}).then(function (response) {
-    console.log(response);
-});
 
-console.log("meme");
+axios
+    .get("https://api.twitch.tv/helix/streams?game_id=33214", {
+        headers: {
+            "Client-ID": process.env.TWITCH_ID
+        }
+    })
+    .then(function (response) {
+        console.log(response.data);
+    });
