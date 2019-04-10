@@ -1,5 +1,5 @@
 {
-  "name": "node-handlebars-passport-boilerplate",
+  "name": "handlebars-passport-boilerplate",
   "version": "1.0.0",
   "description": "Project 2 Starter With Auth",
   "main": "server.js",
@@ -34,5 +34,17 @@
     "eslint-plugin-prettier": "^3.0.1",
     "mocha": "^5.2.0",
     "prettier": "^1.16.4"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lduttonucsd/Project_Two.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/lduttonucsd/Project_Two/issues"
+  },
+  "homepage": "https://github.com/lduttonucsd/Project_Two#readme"
 }

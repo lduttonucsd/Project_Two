@@ -29,6 +29,7 @@ var API = {
     });
   }
 };
+app.use(express.static('views/images')); 
 
 // refreshExamples gets new examples from the db and repopulates the list
 var refreshExamples = function() {

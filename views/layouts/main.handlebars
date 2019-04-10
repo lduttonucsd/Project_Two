@@ -16,7 +16,7 @@
 <body>
   <nav id="nav1" class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="/"><i class="fas fa-tv"></i>BeTwitched</a>
+      <a class="navbar-brand" href="/interest"><i class="fas fa-tv"></i>BeTwitched</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,30 +48,23 @@
   </nav>
   <div class="sidenav">
 
+    <div class="dropdown show">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Games
+      </a>
 
-    <a href="#">Games <button type="button" class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split"
-        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="sr-only">Toggle Dropdown</span>
-      </button>
-      <div class="dropdown-menu">
-        <li><i class="fab fa-battle-net"></i>Overwatch</li>
-        <li><i class="fab fa-steam"></i>CS:GO</li>
-        <li><i class="fab fa-twitch"></i>More...</li>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" style="font-size: 16px; text-align:right" href="/overwatch"><i
+            class="fab fa-battle-net"></i>Overwatch</a>
+        <a class="dropdown-item" style="font-size: 16px; text-align:right" href="/CS:GO"><i
+            class="fab fa-steam"></i>CS:GO</a>
       </div>
-    </a>
+    </div>
 
 
-    <a href="/players">Players <button type="button"
-        class="btn btn-sm btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
-        aria-expanded="false">
-        <span class="sr-only">Toggle Dropdown</span>
-      </button>
-      <div class="dropdown-menu">
-        <li><i class="fab fa-battle-net"></i>Overwatch</li>
-        <li><i class="fab fa-steam"></i>CS:GO</li>
-        <li><i class="fab fa-twitch"></i>More...</li>
-      </div>
-    </a>
+
+    <a id="streamsBTN" class="btn btn-secondary" href="/players">Streams</a>
 
 
     {{#if user}}
