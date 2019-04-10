@@ -1,15 +1,71 @@
-<div style="text-align: center">
-    <span style="display: inline-block; ">
-        <h1>Overwatch League</h1>
-    </span>
-</div>
-<div style="position: relative; float: right; left: -50%; margin: 1%">
-    <span style="display: inline-block;">
-        <img src="public/images/Overwatch.png" style="height: 100px; width:100px">
-    </span>
-</div>
-<div style="margin-top: 20%">
-    <iframe id="mainstream" src="https://player.twitch.tv/?channel=overwatchleague&muted=true" height="500px"
-        width="70%" frameborder="<frameborder>" scrolling="<scrolling>" allowfullscreen="<allowfullscreen>">
-    </iframe>
-</div>
+<body id="OWLpage">
+    <div style="text-align: center">
+        <span style="display: inline-block; ">
+            <h1 class="pageHeader">Overwatch League</h1>
+        </span>
+    </div>
+    <div style="position: relative; float: right; left: -50%; margin: 1%">
+        <span style="display: inline-block;">
+            <img src="https://dotesports-media.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2018/08/11134519/fd299219-4546-424f-98b6-fc375206b176.jpg"
+                style="height: 100px; width:100px">
+        </span>
+    </div>
+
+    {{!-- teams listed here --}}
+    <table id="OWLteamsTable" class="table col-md-4" >
+        <thead>
+            <tr>
+                <th scope="col">Teams:</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="OWLteamsCol" scope="row">Atlanta Reign</th>
+                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg"></img></td>
+            </tr>
+            <tr>
+                <th class="OWLteamsCol" scope="row">Boston Uprising</th>
+                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/W4FGQ24HKCB51513383982827.svg"></img></td>
+            </tr>
+            <tr>
+                <th class="OWLteamsCol" scope="row">Chengduo Hunters</th>
+                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/65/652SCYN8YQPB1542674099514.svg"></img></td>
+            </tr>
+             <tr>
+                <th class="OWLteamsCol" scope="row">Dallas Fuel</th>
+                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/YX6JZ6FR89LU1507822882865.svg"></img></td>
+            </tr>
+             <tr>
+                <th class="OWLteamsCol" scope="row">Florida Mayhem</th>
+                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/M1KNTZW8SGHZ1507822883041.svg"></img></td>
+            </tr>
+             <tr>
+                <th class="OWLteamsCol" scope="row">Gangzhou Charge</th>
+                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/d4/D4ITOG4F5WX01542674113751.svg"></img></td>
+            </tr>
+             <tr>
+                <th class="OWLteamsCol" scope="row">Hangzhou Spark</th>
+                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/gallery/ZQTMF62BVMHV1544640580461.svg"></img></td>
+            </tr>
+             <tr>
+                <th class="OWLteamsCol" scope="row">Houston Outlaws</th>
+                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/gallery/BGP1O8PKAI091546557676638.svg"></img></td>
+            </tr>
+             <tr>
+                <th class="OWLteamsCol" scope="row">London Spitfire</th>
+                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/HCS229B4DP021507822883016.svg"></img></td>
+            </tr>
+             <tr>
+                <th class="OWLteamsCol" scope="row">Los Angeles Gladiators</th>
+                <td id="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/CHTRRZCBEYGN1507822882862.svg"></img></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="margin-top: 20%">
+        <iframe id="mainstream" src="https://player.twitch.tv/?channel=overwatchleague&muted=true" height="500px"
+            width="70%" frameborder="<frameborder>" scrolling="<scrolling>" allowfullscreen="<allowfullscreen>">
+        </iframe>
+    </div>
+</body>
