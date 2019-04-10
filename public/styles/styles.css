@@ -12,6 +12,29 @@ body {
   background-image: url("../images/maxresdefault.0.jpg");
 }
 
+#CSGOpage{
+background-image: url("../images/CSGOstage.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+#OWLpage {
+background-image: url("../images/OWLstage.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.pageHeader{
+  color: #f1f1f1;
+  background-color: #6441a5;
+  border: 10px;
+}
+
+#OWLteamsTable{
+  background-color: #818181;
+  clear: both;
+}
+
 .wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -47,6 +70,7 @@ body {
   padding-top: 20px;
   margin-top: 56px;
   background-color: #ffffff;
+
 }
 
 .sidenav a {
@@ -59,7 +83,7 @@ body {
 
 
 .sidenav a:hover {
-  background-color: #a56c41;
+
   color: #f1f1f1;
 }
 
