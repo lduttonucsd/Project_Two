@@ -6,6 +6,12 @@
   background-color: #6441a5;
 }
 
+#user-sign-up{
+  background-color: #6441a5;
+  justify-content: center;
+  position: relative;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #a59e41;
