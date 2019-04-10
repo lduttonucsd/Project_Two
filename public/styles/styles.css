@@ -30,8 +30,12 @@ background-attachment: fixed;
   border: 10px;
 }
 
+#streamBTN{
+  color: #f1f1f1;
+}
+
 #OWLteamsTable{
-  background-color: #818181;
+  background-color: #ffffff;
   clear: both;
 }
 
@@ -65,26 +69,22 @@ background-attachment: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
   margin-top: 56px;
   background-color: #ffffff;
-
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #000000;
   display: block;
 }
 
-
 .sidenav a:hover {
-
-  color: #f1f1f1;
+color: #f1f1f1;
 }
 
 .main {
