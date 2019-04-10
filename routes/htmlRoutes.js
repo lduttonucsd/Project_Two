@@ -27,6 +27,8 @@ module.exports = app => {
 
   app.get("/players", (req, res) => res.render("players"));
 
+  app.get("/rosters", (req, res) => res.render("teamsview"));
+
   app.get("/playerOne/:name", (req, res) => res.render("Players/playerOne", {name: req.params.name}));
 
   app.get("/overwatch", (req, res) => res.render("overwatch"));
