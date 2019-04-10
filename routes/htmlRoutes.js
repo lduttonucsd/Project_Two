@@ -22,7 +22,9 @@ module.exports = app => {
   //load games page
 
   app.get("/games", (req, res) => res.render("games"));
-  
+
+  app.get("/interest", (req, res) => res.render("interest"));
+
   app.get("/players", (req, res) => res.render("players"));
 
   app.get("/playerOne/:name", (req, res) => res.render("Players/playerOne", {name: req.params.name}));
