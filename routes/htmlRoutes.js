@@ -19,7 +19,6 @@ module.exports = app => {
     });
   });
 
-  //load games page
 
   app.get("/games", (req, res) => res.render("games"));
 
