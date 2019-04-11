@@ -7,8 +7,11 @@ id INT AUTO_INCREMENT,
 team VARCHAR (255),
 name VARCHAR (255),
 role VARCHAR(255),
+teamicon VARCHAR(255),
 PRIMARY KEY (id)
 );
+
+DROP TABLE OWLplayers;
 
 INSERT INTO OWLplayers (team, name, role)
 VALUES ('ATLreign', 'Erster', 'DPS');

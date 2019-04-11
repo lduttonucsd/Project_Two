@@ -2,6 +2,7 @@
     <div style="text-align: center">
         <span style="display: inline-block; ">
             <h1 class="pageHeader">Overwatch League</h1>
+            <h2 class="pageHeader">top 10 teams (global)</h2>
         </span>
     </div>
     <div style="position: relative; float: right; left: -50%; margin: 1%">
@@ -11,87 +12,93 @@
         </span>
     </div>
 
-     <div class="row" style='height: 200px'>
-        <span style="display: inline-block" class="table col-md-4">
+    {{!-- teams listed here --}}
+    <div>
+        <span style="display: inline-block">
             <table id="OWLteamsTable" class="table col-md-4">
                 <thead>
                     <tr>
-                        <th scope="col">Teams:</th>
+                        <th scope="col"><img style="height:30px"
+                                src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/115867563/original/4a62c2cd732cd8dd80ba9d7cb5434b815854860f/smurf-in-overwatch-with-you-top-500-on-2-accounts.jpg"></img>Teams:
+                        </th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th class="OWLteamsCol" scope="row">Atlanta Reign</th>
-                        <td class="OWLteamsIconCol"><img style="height:30px"
+
+                        <th class="OWLteamsCol" scope="row"><a href="/rosters/ATLreign">Atlanta Reign</a></th>
+                        <td class="OWLteamsIconCol"><img id="ATLicon" style="height:30px"
                                 src="https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg"></img>
                         </td>
+
                     </tr>
                     <tr>
-                        <th class="OWLteamsCol" scope="row">Boston Uprising</th>
-                        <td class="OWLteamsIconCol"><img style="height:30px"
+                        <th class="OWLteamsCol" scope="row"><a href="/rosters/BSTuprising">Boston Uprising</a></th>
+                        <td class="OWLteamsIconCol"><img id="BOSicon" style="height:30px"
                                 src="https://bnetcmsus-a.akamaihd.net/cms/page_media/W4FGQ24HKCB51513383982827.svg"></img>
                         </td>
                     </tr>
                     <tr>
-                        <th class="OWLteamsCol" scope="row">Chengduo Hunters</th>
-                        <td class="OWLteamsIconCol"><img style="height:30px"
+                        <th class="OWLteamsCol" scope="row"><a href="/rosters/CHEhunters">Chengduo Hunters</a></th>
+                        <td class="OWLteamsIconCol"><img id="CHEicon" style="height:30px"
                                 src="https://bnetcmsus-a.akamaihd.net/cms/page_media/65/652SCYN8YQPB1542674099514.svg"></img>
                         </td>
                     </tr>
                     <tr>
-                        <th class="OWLteamsCol" scope="row">Dallas Fuel</th>
-                        <td class="OWLteamsIconCol"><img style="height:30px"
+                        <th class="OWLteamsCol" scope="row"><a href="/rosters/DALfuel">Dallas Fuel</a></th>
+                        <td class="OWLteamsIconCol"><img id="DALicon" style="height:30px"
                                 src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/YX6JZ6FR89LU1507822882865.svg"></img>
                         </td>
                     </tr>
                     <tr>
-                        <th class="OWLteamsCol" scope="row">Florida Mayhem</th>
-                        <td class="OWLteamsIconCol"><img style="height:30px"
+                        <th class="OWLteamsCol" scope="row"><a href="/rosters/FLOmayhem">Florida Mayhem</a></th>
+                        <td class="OWLteamsIconCol"><img id="FLOicon" style="height:30px"
                                 src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/M1KNTZW8SGHZ1507822883041.svg"></img>
                         </td>
                     </tr>
                     <tr>
-                        <th class="OWLteamsCol" scope="row">Gangzhou Charge</th>
-                        <td class="OWLteamsIconCol"><img style="height:30px"
+                        <th class="OWLteamsCol" scope="row"><a href="/rosters/GANcharge">Gangzhou Charge</a></th>
+                        <td class="OWLteamsIconCol"><img id="GANicon" style="height:30px"
                                 src="https://bnetcmsus-a.akamaihd.net/cms/page_media/d4/D4ITOG4F5WX01542674113751.svg"></img>
                         </td>
                     </tr>
                     <tr>
-                        <th class="OWLteamsCol" scope="row">Hangzhou Spark</th>
-                        <td class="OWLteamsIconCol"><img style="height:30px"
+                        <th class="OWLteamsCol" scope="row"><a href="/rosters/HANspark">Hangzhou Spark</a></th>
+                        <td class="OWLteamsIconCol"><img id="HANicon" style="height:30px"
                                 src="https://bnetcmsus-a.akamaihd.net/cms/gallery/ZQTMF62BVMHV1544640580461.svg"></img>
                         </td>
                     </tr>
                     <tr>
-                        <th class="OWLteamsCol" scope="row">Houston Outlaws</th>
-                        <td class="OWLteamsIconCol"><img style="height:30px"
+                        <th class="OWLteamsCol" scope="row"><a href="/rosters/HOUoutlaws">Houston Outlaws</a></th>
+                        <td class="OWLteamsIconCol"><img id="HOUicon" style="height:30px"
                                 src="https://bnetcmsus-a.akamaihd.net/cms/gallery/BGP1O8PKAI091546557676638.svg"></img>
                         </td>
                     </tr>
                     <tr>
-                        <th class="OWLteamsCol" scope="row">London Spitfire</th>
-                        <td class="OWLteamsIconCol"><img style="height:30px"
+                        <th class="OWLteamsCol" scope="row"><a href="/rosters/LDNspitfire">London Spitfire</a></th>
+                        <td class="OWLteamsIconCol"><img id="LDNicon" style="height:30px"
                                 src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/HCS229B4DP021507822883016.svg"></img>
                         </td>
                     </tr>
                     <tr>
-                        <th class="OWLteamsCol" scope="row">Los Angeles Gladiators</th>
-                        <td id="OWLteamsIconCol"><img style="height:30px"
+                        <th class="OWLteamsCol" scope="row"><a href="/rosters/LAgladiators">Los Angeles Gladiators</a>
+                        </th>
+                        <td id="OWLteamsIconCol"><img id="LAGicon" style="height:30px"
                                 src="https://bnetcmsus-a.akamaihd.net/cms/template_resource/CHTRRZCBEYGN1507822882862.svg"></img>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </span>
-        
-        <span style="display: inline-block" class="table col-md-8">
-            <div style="margin-top: 20%; width: 650px">
-                <iframe id="CSGO" src="https://player.twitch.tv/?channel=overwatchleague&muted=true" height="500px" width="70%"
-                    frameborder="<frameborder>" scrolling="<scrolling>" allowfullscreen="<allowfullscreen>">
+        <span style="display: inline-block">
+
+            <div style="margin: 15%">
+                <iframe id="mainstream" src="https://player.twitch.tv/?channel=overwatchleague&muted=true"
+                    height="510px" width="500px" frameborder="<frameborder>" scrolling="<scrolling>"
+                    allowfullscreen="<allowfullscreen>">
                 </iframe>
             </div>
         </span>
     </div>
-  
 </body>

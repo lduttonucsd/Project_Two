@@ -6,7 +6,7 @@
   background-color: #6441a5;
 }
 
-#user-sign-up{
+.sign-up-bg {
   background-color: #6441a5;
   justify-content: center;
   position: relative;
@@ -14,7 +14,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #a59e41;
+  background-color: #ffffff;
   background-image: url("../images/maxresdefault.0.jpg");
 }
 
@@ -31,13 +31,13 @@ background-attachment: fixed;
 }
 
 .pageHeader{
-  color: #f1f1f1;
+  color: #ffffff;
   background-color: #6441a5;
-  border: 10px;
+  border: 5px;
 }
 
 #streamBTN{
-  color: #f1f1f1;
+  color: #ffffff;
 }
 
 #OWLteamsTable{
@@ -51,6 +51,7 @@ background-attachment: fixed;
   padding-top: 25px;
   height: 0;
 }
+
 .wrapper iframe {
   position: absolute;
   top: 0;
@@ -90,7 +91,7 @@ background-attachment: fixed;
 }
 
 .sidenav a:hover {
-color: #f1f1f1;
+color: #ffffff;
 }
 
 .main {
@@ -106,19 +107,25 @@ color: #f1f1f1;
 
 tr {
   display: inline-table;
-  height:20px; 
+  height:10px; 
   width: 150px             
   }
-  
+
   table{
-    margin-top: 42.5%;
    height:500px;
-   width: 150px;         
-   display: -moz-groupbox;    
+   width:19%;         
+   display: -moz-groupbox;   
+   margin-bottom: 25%;  
+    margin-top: 15%; 
+
+  }
+  .table{
+    width:19%;         
+    margin-top: 250px;
   }
   tbody{
     overflow-y: scroll;      
     height: 440px;           
-    width: 150px;
+    width: 180px;
     position: absolute;
   }

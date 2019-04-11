@@ -2,8 +2,13 @@ const db = require("../models");
 const passport = require("../config/passport");
 const isAuthenticated = require("../config/middleware/isAuthenticated");
 
+// const chatArr = ["1", "2", "3"];
+// module.exports = chatArr;
+
+
 module.exports = app => {
   // Get all examples
+
   app.get("/api/examples", isAuthenticated, (req, res) => {
     db.Example.findAll({
       where: {
@@ -60,9 +65,36 @@ module.exports = app => {
       });
   });
 
+  app.get("/api/chat", (req, res) => {
+    db.Message.findAll({
+      limit: 10,
+      order: [
+        ['createdAt', 'DESC']
+      ]
+    }).then(function(dbMessage) {
+      res.json(dbMessage);
+    })
+  });
+
+  app.post("/api/chat", (req, res) => {
+    // chatArr.unshift({
+    //   message: req.body,
+    //   date: new Date()
+    // });
+    db.Message.create ({
+      message: req.body.message
+    }).then((dbMessage) => {
+      // console.log(dbMessage);
+    })
+    res.json({
+      message: req.body.message,
+    })
+  })
+
   // Route for logging user out
   app.get("/logout", (req, res) => {
     req.logout();
     res.redirect("/");
   });
 };
+
