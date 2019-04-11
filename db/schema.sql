@@ -6,7 +6,6 @@ CREATE TABLE favoriteChannels(
 id INT AUTO_INCREMENT,
 channel VARCHAR (30),
 PRIMARY KEY (id)
-
 )
 
 create table messages (
