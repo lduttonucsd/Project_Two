@@ -7,6 +7,8 @@ module.exports = app => {
   // Load login page
   app.get("/login", (req, res) => res.render("login"));
 
+  app.get("/", (req, res) => res.render("login"));
+
   // Load profile page
   app.get("/profile", isAuthenticated, (req, res) => {
     db.User.findOne({
@@ -28,17 +30,20 @@ module.exports = app => {
 
   app.get("/rosters/:team", (req, res) => {
     db.sequelize.query("SELECT * FROM OWLplayers WHERE team = ?",
-    { replacements: [req.params.team],
-      type: db.sequelize.QueryTypes.SELECT
-    }).then(data => {
-      const hbsObject = {
-        teams: data
-      };
-      console.log(req.params.team)
-      res.render("teamsview", hbsObject);
-    });
+      {
+        replacements: [req.params.team],
+        type: db.sequelize.QueryTypes.SELECT
+      }).then(data => {
+        const hbsObject = {
+          teams: data
+        };
+        console.log(req.params.team)
+        res.render("teamsview", hbsObject);
+      });
 
   });
+
+
 
   app.get("/playerOne/:name", (req, res) => res.render("Players/playerOne", { name: req.params.name }));
 
