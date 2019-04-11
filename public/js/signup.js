@@ -1,5 +1,5 @@
-$("#user-sign-up").on("submit", function(e) {
-  e.preventDefault();
+$("#user-sign-up").on("submit", function(event) {
+  event.preventDefault();
   $.ajax({
     method: "POST",
     url: "/api/signup",
