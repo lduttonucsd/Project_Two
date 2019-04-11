@@ -6,34 +6,93 @@
   background-color: #6441a5;
 }
 
-.sign-up-bg {
+.btn-secondary {
+  border-radius: 0;
+}
+
+#streamsBTN{
+  color: white;
+}
+
+#nav1{
   background-color: #6441a5;
+}
+
+.navbar-brand{
+  color: white;
+}
+
+.nav-link{
+  color: white;
+}
+
+.sign-up-bg {
+  color: #6441a5;
+  mix-blend-mode: screen;
   justify-content: center;
   position: relative;
+  text-shadow:
+       3px 3px 0 black,
+     -1px -1px 0 black,  
+      1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
+}
+
+#user-login{
+  color: #6441a5;
+  text-shadow:
+       3px 3px 0 black,
+     -1px -1px 0 black,  
+      1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
+}
+#login-header{
+  color: #6441a5;
+  text-shadow:
+       3px 3px 0 black,
+     -1px -1px 0 black,  
+      1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
   background-image: url("../images/maxresdefault.0.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/maxresdefault.0.jpg');
 }
 
 #CSGOpage{
 background-image: url("../images/CSGOstage.jpg");
 background-repeat: no-repeat;
 background-attachment: fixed;
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/CSGOstage.jpg');
+
 }
 
 #OWLpage {
 background-image: url("../images/OWLstage.jpg");
 background-repeat: no-repeat;
 background-attachment: fixed;
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/OWLstage.jpg');
+
 }
 
 .pageHeader{
-  color: #ffffff;
-  background-color: #6441a5;
-  border: 5px;
+  color: #6441a5;
+  mix-blend-mode: screen;
+  justify-content: center;
+  position: relative;
+  font-weight: bolder;
+  text-shadow:
+       3px 3px 0 black,
+     -1px -1px 0 black,  
+      1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
 }
 
 #streamBTN{
@@ -47,17 +106,20 @@ background-attachment: fixed;
 
 .wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  /* padding-bottom: 56.25%;  */
+  padding-bottom: 25%;
   padding-top: 25px;
   height: 0;
+  z-index: 2;
 }
 
 .wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
+  float: left;
 }
 
 .card {
@@ -73,13 +135,13 @@ background-attachment: fixed;
   height: 100%;
   width: 160px;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   top: 0;
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
   margin-top: 56px;
-  background-color: #ffffff;
+  background-color: #6441a5;
 }
 
 .sidenav a {
@@ -98,6 +160,34 @@ color: #ffffff;
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+}
+
+#mainstream {
+  display: block;
+  width: 50%;
+  height: 250px;
+  position: relative;
+  margin: auto;
+  float: left;
+}
+
+#players-channel-name {
+  color: white;
+}
+
+.jumbotron {
+  position: sticky;
+  bottom: 0;
+  float: right;
+  margin: auto;
+  width: 50%;
+  z-index: 0;
+}
+
+.lead {
+  height: 125px;
+  overflow: scroll;
+  font-size: 15px;
 }
 
 @media screen and (max-height: 450px) {
