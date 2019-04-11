@@ -13,66 +13,28 @@
     </div>
 
     {{!-- teams listed here --}}
-    <table id="OWLteamsTable" class="table col-md-4" >
+    <table id="OWLteamsTable" class="table col-md-4">
         <thead>
             <tr>
-                <th scope="col"><img style="height:30px" src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/115867563/original/4a62c2cd732cd8dd80ba9d7cb5434b815854860f/smurf-in-overwatch-with-you-top-500-on-2-accounts.jpg"></img>Team you chose:</th>
+                <th class="OWLteamNameCol" scope="col"><img style="height:30px"
+                        src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/115867563/original/4a62c2cd732cd8dd80ba9d7cb5434b815854860f/smurf-in-overwatch-with-you-top-500-on-2-accounts.jpg"></img>{{team}}:
+                </th>
                 <th scope="col"></th>
+                <th>...</th>
             </tr>
         </thead>
         <tbody>
+            {{#each teams}}
             <tr>
-                <th class="OWLplayerNameCol" scope="row">...</th>
-                <th class="OWLRoleNameCol" scope="row">...</th>
-                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg"></img></td>
+                <th class="OWLplayerNameCol" scope="row">{{this.name}}</th>
+                <th class="OWLRoleNameCol" scope="row">{{this.role}}</th>
+                <td class="OWLteamsIconCol"><img style="height:30px" src="{{teamicon}}"></img></td>
             </tr>
-            <tr>
-                <th class="OWLplayerNameCol" scope="row">...</th>
-                <th class="OWLRoleNameCol" scope="row">...</th>
-                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg"></img></td>
-            </tr>
-            <tr>
-                <th class="OWLplayerNameCol" scope="row">...</th>
-                <th class="OWLRoleNameCol" scope="row">...</th>
-                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg"></img></td>
-            </tr>
-             <tr>
-                <th class="OWLplayerNameCol" scope="row">...</th>
-                <th class="OWLRoleNameCol" scope="row">...</th>
-                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg"></img></td>
-            </tr>
-             <tr>
-                <th class="OWLplayerNameCol" scope="row">...</th>
-                <th class="OWLRoleNameCol" scope="row">...</th>
-                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg"></img></td>
-            </tr>
-             <tr>
-                <th class="OWLplayerNameCol" scope="row">...</th>
-                <th class="OWLRoleNameCol" scope="row">...</th>
-                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg"></img></td>
-            </tr>
-             <tr>
-                <th class="OWLplayerNameCol" scope="row">...</th>
-                <th class="OWLRoleNameCol" scope="row">...</th>
-                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg"></img></td>
-            </tr>
-             <tr>
-                <th class="OWLplayerNameCol" scope="row">...</th>
-                <th class="OWLRoleNameCol" scope="row">...</th>
-                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg"></img></td>
-            </tr>
-             <tr>
-                <th class="OWLplayerNameCol" scope="row">...</th>
-                <th class="OWLRoleNameCol" scope="row">...</th>
-                <td class="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg"></img></td>
-            </tr>
-             <tr>
-                <th class="OWLplayerNameCol" scope="row">...</th>
-                <th class="OWLRoleNameCol" scope="row">...</th>
-                <td id="OWLteamsIconCol"><img style="height:30px" src="https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg"></img></td>
-            </tr>
+            {{/each}}
+           
         </tbody>
     </table>
+
 
     <div>
         <iframe id="mainstream" src="https://player.twitch.tv/?channel=overwatchleague&muted=true" height="500px"
