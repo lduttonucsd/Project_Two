@@ -28,17 +28,20 @@ module.exports = app => {
 
   app.get("/rosters/:team", (req, res) => {
     db.sequelize.query("SELECT * FROM OWLplayers WHERE team = ?",
-    { replacements: [req.params.team],
-      type: db.sequelize.QueryTypes.SELECT
-    }).then(data => {
-      const hbsObject = {
-        teams: data
-      };
-      console.log(req.params.team)
-      res.render("teamsview", hbsObject);
-    });
+      {
+        replacements: [req.params.team],
+        type: db.sequelize.QueryTypes.SELECT
+      }).then(data => {
+        const hbsObject = {
+          teams: data
+        };
+        console.log(req.params.team)
+        res.render("teamsview", hbsObject);
+      });
 
   });
+
+
 
   app.get("/playerOne/:name", (req, res) => res.render("Players/playerOne", { name: req.params.name }));
 

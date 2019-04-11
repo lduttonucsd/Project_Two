@@ -1,0 +1,44 @@
+<body id="CSGOpage">
+    <div style="text-align: center">
+        <span style="display: inline-block; ">
+            <h1 class="pageHeader"> CSGO teams</h1>
+            <h2 class="pageHeader">Roster Info</h2>
+        </span>
+    </div>
+    <div style="position: relative; float: right; left: -50%; margin: 1%">
+        <span style="display: inline-block;">
+            <img src="https://cdn.worldvectorlogo.com/logos/csgo.svg"
+                style="height: 100px; width:100px">
+        </span>
+    </div>
+
+    {{!-- teams listed here --}}
+    <table id="CSGOteamsTable" class="table col-md-4">
+        <thead>
+            <tr>
+                <th class="CSGOteamNameCol" scope="col"><img style="height:30px"
+                        src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/115867563/original/4a62c2cd732cd8dd80ba9d7cb5434b815854860f/smurf-in-overwatch-with-you-top-500-on-2-accounts.jpg"></img>{{team}}:
+                </th>
+                <th scope="col"></th>
+                <th>...</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each teams}}
+            <tr>
+                <th class="OWLnameCol" scope="row">{{this.name}}</th>
+                <th class="OWLcountryCol" scope="row">{{this.role}}</th>
+                <td class="OWLteamsIconCol"><img style="height:30px" src="{{teamicon}}"></img></td>
+            </tr>
+            {{/each}}
+           
+        </tbody>
+    </table>
+
+
+    <div>
+        <iframe id="mainstream" src="https://player.twitch.tv/?channel=overwatchleague&muted=true" height="500px"
+            width="70%" frameborder="<frameborder>" scrolling="<scrolling>" allowfullscreen="<allowfullscreen>">
+        </iframe>
+    </div>
+</body>
